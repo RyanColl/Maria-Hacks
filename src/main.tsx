@@ -31,7 +31,7 @@ class NavBar extends React.Component {
         return(   
                   <ul> 
                     <li><a><img src={"./img/LogoMakr-4Ocmnm.png"} ></img></a></li>
-                    <li></li>
+                    <li><button type="submit" value="hostroom"></button></li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -41,4 +41,3 @@ class NavBar extends React.Component {
       }
   }
 
-class 
