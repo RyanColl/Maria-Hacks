@@ -124,14 +124,15 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color:rgba(76,164, 219, 0.5);;
 }
-#note1 {
+#note {
     width: 200px;
     height: 150px;
     background-color: rgba(233,66, 172, 1);
     border-radius: 50px;
     display: grid;
-    grid-template-rows: 35px 85px 30px;
+    grid-template-rows: 35px 80px 35px;
     align-items: center;
     justify-content: center;
 }
@@ -146,7 +147,7 @@ h6 {
     
 }
 #content {
-    
+    font-size: 80%;
     color: white;
     text-align: center;
 }
@@ -161,6 +162,12 @@ button[value="edit"] {
     text-decoration: none;
     -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); 
+}
+button[value="edit"]:focus {
+    outline:none;
+}
+button[value="delete"]:focus {
+    outline:none;
 }
 button[value="delete"] {
     margin-left: 7.5px;

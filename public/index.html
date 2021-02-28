@@ -27,13 +27,42 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer>
-      $($(document).ready(function() {
-        
-      }))
-    </script>
+    
     <title>React App</title>
+    <script defer>
+      function newNote(props) {
+    
+    let notes = document.getElementById("notes")
+    let div = document.createElement("div")
+    div.setAttribute("id", "note")
+    let h6 = document.createElement("h6")
+    h6.innerHTML = props.date
+    div.appendChild(h6)
+    let p = document.createElement("p")
+    p.setAttribute("id", "content")
+    div.appendChild(p)
+
+    let butt = document.createElement("div")
+    let a1 = document.createElement("a")
+    let button1 = document.createElement("button")
+    button1.setAttribute("value",  "edit")
+    button1.setAttribute("type",  "button")
+    button1.textContent = "edit"
+    a1.appendChild(button1)
+    a1.setAttribute("href", "#")
+    let a2 = document.createElement("a")
+    let button2 = document.createElement("button")
+    button2.setAttribute("value",  "delete")
+    button2.setAttribute("type",  "button")
+    button2.textContent = "delete"
+    butt.appendChild(a1)
+    butt.appendChild(a2)
+    notes?.appendChild(div)
+}
+    document.getElementById("newnote")?.addEventListener("click", (props) => {
+            newNote(props);
+        })  
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
