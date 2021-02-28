@@ -1,12 +1,65 @@
 body{
   font-family: cursive;
 }
+h1 {
+  position: relative;
+  top: -31px;
+  text-align: center;
+  background-color: #4CA4DB;
+  padding: 50px 20px 70px 20px;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2.8rem;
+}
+
+#buttons {
+  height: 180px;
+  background-color: #4CA4DB;
+  position: relative;
+  top: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 400px) {
+  #buttons {
+    top: 250px;
+  }
+}
+@media screen and (max-height: 700px) {
+  #buttons {
+    top: 300px;
+  }
+}
+.signin {
+  font-size: 1.58rem;
+  padding: 5px 20px 5px 20px;
+  background: #160A5B;
+  color: white;
+  border-radius: 20px;
+  margin-right: 20px;
+  
+}
+.signin:focus {
+  outline:none;
+}
+.signup:focus {
+  outline:none;
+}
+.signup {
+  margin-left: 20px;
+  font-size: 1.58rem;
+  padding: 5px 20px 5px 20px;
+  background: #160A5B;
+  color: white;
+  border-radius: 20px;
+}
 #viewbox {
   position: relative;
   top: 200px;
 }
 svg{
-  width: 35%;
+  width: 40%;
   overflow: visible;
   max-width: 350px;
   margin: 0 auto;
@@ -51,20 +104,20 @@ svg{
     transform: translate(0);
   }
 }    
-    .client_fil9 {fill:black;fill-rule:nonzero}
-    .client_fil15 {fill:#100743;fill-rule:nonzero}
-    .client_fil0 {fill:#160A5B;fill-rule:nonzero}
-    .client_fil3 {fill:#25136B;fill-rule:nonzero}
-    .client_fil6 {fill:#300901;fill-rule:nonzero}
-    .client_fil7 {fill:#433A9B;fill-rule:nonzero}
-    .client_fil8 {fill:#44DADF;fill-rule:nonzero}
-    .client_fil13 {fill:#453C9E;fill-rule:nonzero}
-    .client_fil16 {fill:#473A7A;fill-rule:nonzero}
-    .client_fil14 {fill:#4CA4DB;fill-rule:nonzero}
-    .client_fil5 {fill:#5E1C17;fill-rule:nonzero}
-    .client_fil10 {fill:#6760AE;fill-rule:nonzero}
-    .client_fil11 {Fill:#8EAFC1;fill-rule:nonzero}
-    .client_fil2 {fill:#D8D8D8;fill-rule:nonzero}
-    .client_fil4 {fill:#DDAC9E;fill-rule:nonzero}
-    .client_fil1 {fill:#E8C8BA;fill-rule:nonzero}
-    .client_fil12 {fill:white;fill-rule:nonzero}
+    .path9 {fill:black;fill-rule:nonzero}
+    .path15 {fill:#100743;fill-rule:nonzero}
+    .path0 {fill:#160A5B;fill-rule:nonzero}
+    .path3 {fill:#25136B;fill-rule:nonzero}
+    .path6 {fill:#300901;fill-rule:nonzero}
+    .path7 {fill:#433A9B;fill-rule:nonzero}
+    .path8 {fill:#44DADF;fill-rule:nonzero}
+    .path13 {fill:#453C9E;fill-rule:nonzero}
+    .path16 {fill:#473A7A;fill-rule:nonzero}
+    .path14 {fill:#4CA4DB;fill-rule:nonzero}
+    .path5 {fill:#5E1C17;fill-rule:nonzero}
+    .path10 {fill:#6760AE;fill-rule:nonzero}
+    .path11 {Fill:#8EAFC1;fill-rule:nonzero}
+    .path2 {fill:#D8D8D8;fill-rule:nonzero}
+    .path4 {fill:#DDAC9E;fill-rule:nonzero}
+    .path1 {fill:#E8C8BA;fill-rule:nonzero}
+    .path12 {fill:white;fill-rule:nonzero}
